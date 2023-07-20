@@ -18,4 +18,5 @@ public class IngredientTypeTest {
     public void fillingTest() {
         assertEquals(FILLING, IngredientType.FILLING.toString());
     }
+
 }

@@ -48,4 +48,5 @@ public class BunTest {
 
         assertEquals(price, actual, 0);
     }
+
 }

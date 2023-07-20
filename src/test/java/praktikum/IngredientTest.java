@@ -53,4 +53,5 @@ public class IngredientTest {
 
         assertEquals(price, ingredient.getPrice(), 0);
     }
+
 }
