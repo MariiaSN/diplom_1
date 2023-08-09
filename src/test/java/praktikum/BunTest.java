@@ -1,14 +1,10 @@
 package praktikum;
 
-import com.github.javafaker.service.FakeValuesService;
-import com.github.javafaker.service.RandomService;
 import org.apache.commons.lang3.RandomStringUtils;
-import org.junit.Before;
 import org.junit.Test;
 import org.junit.runner.RunWith;
 import org.junit.runners.Parameterized;
 
-import java.util.Locale;
 import java.util.Random;
 
 import static org.junit.Assert.assertEquals;
@@ -27,7 +23,7 @@ public class BunTest {
 
     @Parameterized.Parameters
     public static Object[][] getParameters() {
-        return new Object[][] {
+        return new Object[][]{
                 {randomStringUtils.randomAlphabetic(10), random.nextFloat()},
                 {randomStringUtils.randomAlphabetic(10), 700.000000000F}
         };

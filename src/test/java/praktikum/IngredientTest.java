@@ -1,7 +1,6 @@
 package praktikum;
 
 import org.apache.commons.lang3.RandomStringUtils;
-import org.junit.Before;
 import org.junit.Test;
 import org.junit.runner.RunWith;
 import org.junit.runners.Parameterized;
@@ -27,7 +26,7 @@ public class IngredientTest {
 
     @Parameterized.Parameters
     public static Object[][] createIngredient() {
-        return new Object[][] {
+        return new Object[][]{
                 {IngredientType.FILLING, randomStringUtils.randomAlphabetic(10), random.nextFloat()},
                 {IngredientType.SAUCE, randomStringUtils.randomAlphabetic(10), random.nextFloat()}
         };
